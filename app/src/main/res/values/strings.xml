@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculatrice</string>
+    <string name="first_string">Ceci est une chaine de caractères</string>
+    <string name="bouton">Bouton</string>
+</resources>
