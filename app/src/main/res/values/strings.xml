@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">Calculatrice</string>
-    <string name="first_string">Ceci est une chaine de caractères</string>
-    <string name="bouton">Bouton</string>
+    <string name="calcul">0</string>
+    <string name="bouton_1">1</string>
+    <string name="bouton_2">2</string>
+    <string name="bouton_3">3</string>
+    <string name="bouton_4">4</string>
+    <string name="bouton_5">5</string>
+    <string name="bouton_6">6</string>
+    <string name="bouton_7">7</string>
+    <string name="bouton_8">8</string>
+    <string name="bouton_9">9</string>
+    <string name="bouton_0">0</string>
+    <string name="bouton_diviser">/</string>
+    <string name="bouton_multiplier">X</string>
+    <string name="bouton_soustraire">-</string>
+    <string name="bouton_additionner">+</string>
+    <string name="bouton_egal">=</string>
+    <string name="bouton_rien"></string>
+    <string name="bouton_reset">Reset</string>
 </resources>
