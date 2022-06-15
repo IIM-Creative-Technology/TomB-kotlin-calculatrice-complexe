@@ -26,23 +26,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:padding="10dp"
-        android:textSize="24dp"
+        android:text="@string/calcul"
         android:textAlignment="textEnd"
-        android:text="@string/calcul" />
+        android:textSize="24dp" />
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="320dp"
-        android:padding="20dp"
         android:stretchColumns="*">
 
         <TableRow
@@ -51,33 +43,36 @@
 
             <Button
                 android:id="@+id/bouton_7"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_7" />
 
             <Button
                 android:id="@+id/bouton_8"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_8" />
 
             <Button
                 android:id="@+id/bouton_9"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_9" />
 
             <Button
                 android:id="@+id/bouton_diviser"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/bouton_diviser"
+                android:layout_margin="2dp"
                 android:backgroundTint="@color/teal_700"
-                />
+                android:onClick="calculFunction"
+                android:text="@string/bouton_diviser" />
         </TableRow>
 
         <TableRow
@@ -86,33 +81,36 @@
 
             <Button
                 android:id="@+id/bouton_4"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_4" />
 
             <Button
                 android:id="@+id/bouton_5"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_5" />
 
             <Button
                 android:id="@+id/bouton_6"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_6" />
 
             <Button
                 android:id="@+id/bouton_multiplier"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/bouton_multiplier"
+                android:layout_margin="2dp"
                 android:backgroundTint="@color/teal_700"
-                />
+                android:onClick="calculFunction"
+                android:text="@string/bouton_multiplier" />
         </TableRow>
 
         <TableRow
@@ -121,33 +119,78 @@
 
             <Button
                 android:id="@+id/bouton_1"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_1" />
 
             <Button
                 android:id="@+id/bouton_2"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_2" />
 
             <Button
                 android:id="@+id/bouton_3"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
                 android:text="@string/bouton_3" />
 
             <Button
                 android:id="@+id/bouton_soustraire"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/bouton_soustraire"
+                android:layout_margin="2dp"
                 android:backgroundTint="@color/teal_700"
-                />
+                android:onClick="calculFunction"
+                android:text="@string/bouton_soustraire" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="89dp">
+
+            <Button
+                android:id="@+id/bouton_modulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:backgroundTint="@color/teal_700"
+                android:onClick="calculFunction"
+                android:padding="5dp"
+                android:text="@string/bouton_modulo" />
+
+            <Button
+                android:id="@+id/bouton_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:backgroundTint="@color/teal_700"
+                android:onClick="calculFunction"
+                android:padding="5dp"
+                android:text="@string/bouton_0" />
+
+            <Button
+                android:id="@+id/bouton_decimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
+                android:text="@string/bouton_decimal" />
+
+            <Button
+                android:id="@+id/bouton_additionner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:backgroundTint="@color/teal_700"
+                android:onClick="calculFunction"
+                android:text="@string/bouton_additionner" />
         </TableRow>
 
         <TableRow
@@ -155,41 +198,22 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bouton_egal"
-                android:onClick="calculFunction"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/bouton_egal"
-                android:backgroundTint="@color/teal_700"
-                />
-
-            <Button
                 android:id="@+id/bouton_reset"
-                android:onClick="calculFunction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/bouton_reset"
-                android:backgroundTint="@color/teal_700"
-                />
+                android:layout_span="2"
+                android:layout_margin="2dp"
+                android:onClick="calculFunction"
+                android:text="@string/bouton_reset" />
 
             <Button
-                android:id="@+id/bouton_0"
-                android:onClick="calculFunction"
+                android:id="@+id/bouton_egal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/bouton_0"
-                />
-
-            <Button
-                android:id="@+id/bouton_additionner"
+                android:layout_span="2"
+                android:layout_margin="2dp"
                 android:onClick="calculFunction"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/bouton_additionner"
-                android:backgroundTint="@color/teal_700"
-                />
+                android:text="@string/bouton_egal" />
         </TableRow>
     </TableLayout>
 

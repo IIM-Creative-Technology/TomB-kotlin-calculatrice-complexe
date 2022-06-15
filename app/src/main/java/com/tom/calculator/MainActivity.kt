@@ -50,36 +50,31 @@ class MainActivity : AppCompatActivity() {
             calcul_texte.text = calcul_texte.text.toString() + "/"
         } else if (view.id == R.id.bouton_egal) {
             var fullString = calcul_texte.text.toString()
+            // extract the numbers and different operators from the string
+            var numbers = fullString.split("[+-/*]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+            var operators = fullString.split("[0-9]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+            // convert the numbers to int
+            var numbersInt = Array(numbers.size) { 0 }
+            for (i in 0 until numbers.size) {
+                numbersInt[i] = numbers[i].toInt()
+            }
+            // calculate the result for each operator
+            var result = numbersInt[0]
+            for (i in 0 until operators.size) {
+                if (operators[i] == "+") {
+                    result += numbersInt[i + 1]
+                } else if (operators[i] == "-") {
+                    result -= numbersInt[i + 1]
+                } else if (operators[i] == "*") {
+                    result *= numbersInt[i + 1]
+                } else if (operators[i] == "/") {
+                    result /= numbersInt[i + 1]
+                }
+            }
+            calcul_texte.text = result.toString()
             
-            // find each operator and calculate the result
-            var index = fullString.indexOf("+")
-            if (index != -1) {
-                var firstNumber = fullString.substring(0, index)
-                var secondNumber = fullString.substring(index + 1)
-                var result = firstNumber.toInt() + secondNumber.toInt()
-                calcul_texte.text = result.toString()
-            }
-            index = fullString.indexOf("-")
-            if (index != -1) {
-                var firstNumber = fullString.substring(0, index)
-                var secondNumber = fullString.substring(index + 1)
-                var result = firstNumber.toInt() - secondNumber.toInt()
-                calcul_texte.text = result.toString()
-            }
-            index = fullString.indexOf("*")
-            if (index != -1) {
-                var firstNumber = fullString.substring(0, index)
-                var secondNumber = fullString.substring(index + 1)
-                var result = firstNumber.toInt() * secondNumber.toInt()
-                calcul_texte.text = result.toString()
-            }
-            index = fullString.indexOf("/")
-            if (index != -1) {
-                var firstNumber = fullString.substring(0, index)
-                var secondNumber = fullString.substring(index + 1)
-                var result = firstNumber.toInt() / secondNumber.toInt()
-                calcul_texte.text = result.toString()
-            }
+            
+
         } else if (view.id == R.id.bouton_reset) {
             calcul_texte.text = ""
         }
